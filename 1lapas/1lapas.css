@@ -1,0 +1,37 @@
+.pirmaslapas {
+ background-color: white;
+ margin: 1px;
+
+}
+
+.komandaA {
+font-style: italic;
+ width: 200px;
+ border: solid;
+ border-left:;
+ padding: 20px;
+ position: fixed;
+
+}
+.data{
+ font-style: italic;
+ width: 200px;
+ border: solid
+
+}
+.nuotrauka {
+ border: solid;
+ width: 1000px;
+}
+
+.reitingai {
+
+}
+
+.tabai .active {
+ color: green;
+ background-color: white;
+}
+body {
+ background-color: green;
+}
