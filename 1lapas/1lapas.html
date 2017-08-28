@@ -6,20 +6,65 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="1lapas.css">
     <link rel="stylesheet" href="isdestymas1.css">
+    <link rel="stylesheet" href="animacijos.css">
 </head>
 <body>
-<div class= "pirmaslapas">
-    <div class="komandaA">
-        <h1> Komanda "A"</h1>
+<div class="pirmasLapas">
+    <div cass="komanda">
+        <div class="nuotrauka1">
+            <img src="Landscape.jpg" width="100" height="100"/>
+            <div class="transbox">
+                <h1> Komanda A </h1>
+            </div>
+        </div>
     </div>
-    <div class="data" >
-        <h2> Data</h2>
+    <div class="data">
+        <p id="laikas"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("laikas").innerHTML = d.toDateString();
+        </script>
     </div>
     <div class="nuotrauka">
-        Bendra nuotrauka
+
+        <a target="_blank" href="2lapas.html">
+            <img src="../img/Mano nuotrauka1.jpg" width="400" height="400"/>
+        </a>
+        <div align="center">Komandos nuotrauka</div>
     </div>
-    <div class="reitingai">
-        <h2> Reitingai</h2>
+
+
+    <div class="dropdown">
+        <button class="meniu">Menesio reitingas</button>
+        <div class="dropdown-content">
+            <a href=".......">Pirma vieta</a>
+            <a href=".......">Atra vieta</a>
+            <a href=".......">Trecia vieta</a>
+        </div>
+    </div>
+    <div class="button">
+        <button class="meniu2 dropdown" >Metu reitingas</button>
+        <div id="vieta1" class="reitingai button button1">
+           <!button type="button" onclick="document.write(5+5)> Nr.1</button>
+        </div>
+        <div id="vieta2" class="reitingai button button2">
+            Nr.2
+        </div>
+        <div id="vieta3" class="reitingai button button3">
+            Nr.3
+        </div>
+    </div>
+    <div class="progresas">
+        <div id="vieta1" class=" button button1">
+            <!button type="button" onclick="document.write(5+5)> Pirmos vietos rezultatas</button>
+        </div>
+        <div id="vieta2" class=" button button2">
+          Antros vietos rezultatas
+        </div>
+        <div id="vieta3" class=" button button3">
+            Trecios vietos rezuktatas
+        </div>
+
     </div>
 </div>
 

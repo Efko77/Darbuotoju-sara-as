@@ -1,0 +1,36 @@
+.button1:hover {
+    background-color: gold;
+    color: black;
+    border: 1px solid black;
+
+}
+.button2:hover {
+    background-color: silver;
+    color: black;
+    border: 1px solid black;
+}
+.button3:hover {
+    background-color: brown;
+    color: white;
+    border: 1px solid black;
+
+}
+@keyframes example {
+    forom {background-color: black;}
+    to {background-color: blueviolet}}
+
+
+.dropdown {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin: 15px;
+}
+.nuotrauka {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+div.nuotrauka:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

@@ -1,4 +1,4 @@
-.komandaA {
+div.komanda {
     position: relative;
     top: 10px;
     left: 550px;
@@ -11,10 +11,41 @@
 .nuotrauka {
     position: relative;
     top: 40px;
-    left: 150px;
+    left: 475px;
 }
+.nuotrauka1 {
+    position: relative;
+    top:10px;
+    left: 475px;
+}
+
 .reitingai {
     position: relative;
+    margin: 30px;
+    top: 40px;
+    left: 10px;
+}
+.button {
+    position: relative;
     top: 30px;
-    left: 500px;
+    left: 10px;
+}
+.dropdown {
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    padding: 15px;
+}
+.meniu {
+    margin: 1px;
+}
+
+.dropdown-content a:hover {
+    background-color: blueviolet;
+}
+.dropdown:hover.dropdown-content {
+    display: block;
+}
+.dropdown:hover.meniu {
+    background-color: coral;
 }
