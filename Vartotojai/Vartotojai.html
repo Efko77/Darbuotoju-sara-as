@@ -8,10 +8,12 @@
 
 <div ng-repeat="user in users">
     <img border="0"
-         src="https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-9/14199766_612485048933171_5086421876502780681_n.jpg?oh=2b336b89b69f3cfa5a5b706001fb4101&oe=5A2FB845"
+        src="/img/{{user.id}}.jpg"
          width="200" height="200">
-    <div class=>Vardas Pavardė: {{user.name}}</div>
-    <div class="ID">ID:</div>
+    <div>ID: {{user.id}}</div>
+    <div>Vardas: {{user.name}}</div>
+    <div>Pavarde: {{user.surname}}</div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
