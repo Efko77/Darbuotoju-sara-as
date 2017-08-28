@@ -1,1 +1,1 @@
-var app = angular.module('manoAplikacija', ["ngRoute"]);
+var app = angular.module('manoAplikacija', []);
