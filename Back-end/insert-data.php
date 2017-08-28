@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "root";
 $dbname = "myDB";
-$vardas = $_POST['name'];
+$vardas = $_POST['name'];//['lauko pavadinimas']
 $pavarde = $_POST['surname'];
 
 try {
