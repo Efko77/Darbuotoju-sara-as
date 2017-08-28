@@ -9,13 +9,10 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT id, name, surname FROM vartotojas");
     $stmt->execute();
-    $rezultatas=$stmt->fetchAll();
+    $rezultatas = $stmt->fetchAll();
     echo json_encode($rezultatas);
 
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 unset($conn);
-
-
-

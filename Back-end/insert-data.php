@@ -23,4 +23,3 @@ try {
 }
 
 unset($conn);
-
