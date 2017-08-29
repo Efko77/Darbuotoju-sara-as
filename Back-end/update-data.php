@@ -12,16 +12,17 @@ $password = $_POST['password'];
 
 
 try {
-    if ($password != "Mantas1") {
+    if ($password != "12345") {
         echo "Blogas slaptažodis";
     } else {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $passworddb);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "UPDATE vartotojas set darbo_valandu_skaicius = $darbo_valandu_skaicius, Virsvalandziai = $Virsvalandziai WHERE id = $id";
+        $sql = "UPDATE vartotojas set darbo_valandu_skaicius = :darbo_valandu_skaicius, Virsvalandziai = :Virsvalandziai WHERE id = $id";
         // use exec() because no results are returned
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(":darbo_valandu_skaicius", $darbo_valandu_skaicius);
+        $stmt->bindParam(":Virsvalandziai", $Virsvalandziai);
         $stmt->execute();
         //$last_id = $conn->lastInsertId();
         //echo "New record created successfully. Last inserted ID is: " . $last_id;

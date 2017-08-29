@@ -7,7 +7,6 @@
 </head>
 <body ng-controller="vartotojaiController">
 
-
 <img border="0"
      src="/img/{{user.id}}.jpg"
      width="300" height="300">
@@ -19,8 +18,8 @@
 
 <form method="post" action="../Back-end/update-data.php">
     <input name="id" type="hidden" value="{{user.id}}">
-    <input name="darbo_valandu_skaicius" placeholder="Iveskite darbo valandu sk." value="{{user.darbo_valandu_skaicius}}">
-    <input name="Virsvalandziai" placeholder="Iveskite virsvalandzius" value="{{user.Virsvalandziai}}">
+    <input name="darbo_valandu_skaicius" value="{{user.darbo_valandu_skaicius}}">
+    <input name="Virsvalandziai" value="{{user.Virsvalandziai}}">
     <input name="password" type="password" placeholder="Įveskite slaptažodį">
     <input type="submit" value="Patvirtinti">
 </form>

@@ -1,6 +1,7 @@
 body {
     background-image: url("juodas.jpg");
-    margin: 10px auto;
+
+    padding: 20px ;
 }
 
 .tekstas{
