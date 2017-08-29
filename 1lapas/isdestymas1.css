@@ -3,6 +3,11 @@ div.komanda {
     top: 10px;
     left: 550px;
 }
+.naujienos {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
 .data {
     position: relative;
     top: 30px;
