@@ -6,15 +6,18 @@
 </head>
 <body ng-controller="vartotojaiController">
 
-<div ng-repeat="user in users">
+
     <img border="0"
         src="/img/{{user.id}}.jpg"
          width="200" height="200">
     <div>ID: {{user.id}}</div>
     <div>Vardas: {{user.name}}</div>
     <div>Pavarde: {{user.surname}}</div>
+    <div>Darbo valandu skaicius: {{user.darbo_valandu_skaicius}}</div>
+    <div>Virsvalandžiai: {{user.Virsvalandziai}}</div>
 
-</div>
+    <form method="post" action="../Back-end/update-data.php"> <input name="id" type="hidden" value="{{user.id}}"><input name="name" value="{{user.name}}"><input name="surname" value="{{user.surname}}"><input name="darbo_valandu_skaicius" value="{{user.darbo_valandu_skaicius}}"><input name="Virsvalandziai" value="{{user.Virsvalandziai}}"><input type="submit"> <input name="password"></form>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="manoAplikacija.js"></script>
