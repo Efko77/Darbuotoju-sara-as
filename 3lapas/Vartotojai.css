@@ -1,0 +1,9 @@
+body {
+    background-image: url("juodas.jpg");
+    margin: 10px auto;
+}
+
+.tekstas{
+    color: white;
+    font-size: 20px;
+}
