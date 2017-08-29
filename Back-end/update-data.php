@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$passworddb = "";
+$passworddb = "root";
 $dbname = "myDB";
 $id = $_POST['id'];
 $vardas = $_POST['name'];//['lauko pavadinimas']
@@ -18,11 +18,10 @@ try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $passworddb);
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $sql = "UPDATE vartotojas set NAME = '$vardas', surname = '$pavarde', darbo_valandu_skaicius = $darbo_valandu_skaicius, Virsvalandziai = $Virsvalandziai WHERE id = $id";
+        $sql = "UPDATE vartotojas set darbo_valandu_skaicius = $darbo_valandu_skaicius, Virsvalandziai = $Virsvalandziai WHERE id = $id";
         // use exec() because no results are returned
         $stmt = $conn->prepare($sql);
-        $stmt->bindParam(":vardas", $vardas);
-        $stmt->bindParam(":pavarde", $pavarde);
+        $stmt->bindParam(":darbo_valandu_skaicius", $darbo_valandu_skaicius);
         $stmt->execute();
         //$last_id = $conn->lastInsertId();
         //echo "New record created successfully. Last inserted ID is: " . $last_id;

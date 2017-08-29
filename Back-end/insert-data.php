@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "myDB";
 $vardas = $_POST['name'];//['lauko pavadinimas']
 $pavarde = $_POST['surname'];

@@ -2,22 +2,28 @@
 <html lang="en" ng-app="manoAplikacija">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vartotojas</title>
     <link rel="stylesheet" href="Vartotojai.css">
 </head>
 <body ng-controller="vartotojaiController">
 
 
-    <img border="0"
-        src="/img/{{user.id}}.jpg"
-         width="300" height="300">
-    <div class="tekstas">ID: {{user.id}}</div>
-    <div class="tekstas">Vardas: {{user.name}}</div>
-    <div class="tekstas">Pavarde: {{user.surname}}</div>
-    <div class="tekstas">Darbo valandu skaicius: {{user.darbo_valandu_skaicius}}</div>
-    <div class="tekstas">Virsvalandžiai: {{user.Virsvalandziai}}</div>
+<img border="0"
+     src="/img/{{user.id}}.jpg"
+     width="300" height="300">
+<div class="tekstas">ID: {{user.id}}</div>
+<div class="tekstas">Vardas: {{user.name}}</div>
+<div class="tekstas">Pavarde: {{user.surname}}</div>
+<div class="tekstas">Darbo valandu skaicius (iš viso): {{user.darbo_valandu_skaicius}}</div>
+<div class="tekstas">Virsvalandžiai (iš viso): {{user.Virsvalandziai}}</div>
 
-    <form method="post" action="../Back-end/update-data.php"> <input name="id" type="hidden" value="{{user.id}}"><input name="name" value="{{user.name}}"><input name="surname" value="{{user.surname}}"><input name="darbo_valandu_skaicius" value="{{user.darbo_valandu_skaicius}}"><input name="Virsvalandziai" value="{{user.Virsvalandziai}}"><input type="submit"> <input name="password"></form>
+<form method="post" action="../Back-end/update-data.php">
+    <input name="id" type="hidden" value="{{user.id}}">
+    <input name="darbo_valandu_skaicius" placeholder="Iveskite darbo valandu sk." value="{{user.darbo_valandu_skaicius}}">
+    <input name="Virsvalandziai" placeholder="Iveskite virsvalandzius" value="{{user.Virsvalandziai}}">
+    <input name="password" type="password" placeholder="Įveskite slaptažodį">
+    <input type="submit" value="Patvirtinti">
+</form>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
