@@ -18,7 +18,9 @@ div.komanda {
     width: 300px;
     border: solid;
     text-align: center;
-    color: white;
+    color: black;
+    display: block;
+    background-color: white;
 }
 .data {
     font-style: italic;
@@ -30,6 +32,7 @@ div.komanda {
 div.nuotrauka1{
     border: 1px solid black;
     width: 400px;
+    background: url("../img/Landscape.jpg");
 }
 div.transbox {
     margin: 30px;
@@ -64,11 +67,24 @@ div.transbox h1{
 
 }
 
-.button1.active {
+.button1 {
     color: black;
     background-color: white;
     border: 2px solid;
 }
+.button2 {
+    color: black;
+    background-color: white;
+    border: 2px solid;
+}
+.button3 {
+    color: black;
+    background-color: white;
+    border: 2px solid;
+}
+
+
+
 .button {
     color: black;
     border: none;
@@ -82,7 +98,7 @@ div.transbox h1{
 }
 
 body {
-    background-color: green;
+    background: url("../img/Landscape.jpg");
 }
 .meniu {
     background-color: black;
@@ -93,7 +109,7 @@ body {
     cursor: pointer;
 }
 .dropdown-content {
-    display: inline-block;
+    display: none;
     position: absolute;
     background-color: gold;
     min-width: 160px;
@@ -104,4 +120,21 @@ body {
     padding: 12px 16px;
 text-decoration: none;
 color: black;
+}
+.progresas1 {
+    color: black;
+    background-color: white;
+    border: 2px solid;
+    width: 400px;
+    height: 10px;
+}
+.progresas2{
+    color: black;
+    background-color: white;
+    border: 2px solid;
+}
+.progresas3 {
+    color: black;
+    background-color: white;
+    border: 2px solid;
 }

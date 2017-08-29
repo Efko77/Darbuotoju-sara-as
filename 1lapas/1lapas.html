@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="1lapas.css">
     <link rel="stylesheet" href="isdestymas1.css">
     <link rel="stylesheet" href="animacijos.css">
+    <script src="jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
 <div class="pirmasLapas">
     <div cass="komanda">
         <div class="nuotrauka1">
-            <img src="Landscape.jpg" width="100" height="100"/>
+            <!--img src="../img/Landscape.jpg" width="100" height="100"/-->
             <div class="transbox">
                 <h1> Komanda A </h1>
             </div>
@@ -26,20 +28,20 @@
         </script>
     </div>
     <div class="naujienos">
-        <p> Naujienos</p>
+        <p> Naujienos netrukus </p>
         <hr>
     </div>
     <div class="nuotrauka">
-
-        <a target="_blank" href="2lapas.html">
-            <img src="../img/babe.jpg" width="400" height="400"/>
-        </a>
-        <div align="center">Komandos nuotrauka</div>
+        <a target="_blank"
+           href="../2lapas/2lapas.html">
+            <img src="../img/babe.jpg" width="400"
+                 height="400"/></a>
+        <div align="center">Komandos nuotrauka
+        </div>
     </div>
-
-
     <div class="dropdown">
-        <button class="meniu">Menesio reitingas</button>
+        <button class="meniu">Menesio reitingas
+        </button>
         <div class="dropdown-content">
             <a href=".......">Pirma vieta</a>
             <a href=".......">Atra vieta</a>
@@ -49,28 +51,38 @@
     <div class="button">
         <button class="meniu2 dropdown">Metu reitingas</button>
         <div id="vieta1" class="reitingai button button1">
-            <!button type="button" onclick="document.write(5+5)> Nr.1</button>
+            Nr.1
+            <div class="progresas1">
+
+            </div>
         </div>
         <div id="vieta2" class="reitingai button button2">
             Nr.2
+            <div class="progresas2">
+
+            </div>
         </div>
         <div id="vieta3" class="reitingai button button3">
             Nr.3
-        </div>
-    </div>
-    <div class="progresas">
-        <div id="vieta1" class=" button button1">
-            <!button type="button" onclick="document.write(5+5)> Pirmos vietos rezultatas</button>
-        </div>
-        <div id="vieta2" class=" button button2">
-            Antros vietos rezultatas
-        </div>
-        <div id="vieta3" class=" button button3">
-            Trecios vietos rezuktatas
-        </div>
+            <div class="progresas3">
 
+            </div>
+        </div>
     </div>
+    <!--div class="progresas">
+    <div id="vieta4" class=" button button1">
+    <button type="button" onclick="document.write(5+5)> Pirmos vietos rezultatas</button>
+    </div>
+    <div id="vieta5" class="button button2">
+    Antros vietos rezultatas
+    </div>
+    <div id="vieta6" class="button button3">
+    Trecios vietos rezuktatas
+    </div>
+    </div-->
 </div>
+<script
+        src="1lapas.js"></script>
 
 </body>
 </html>

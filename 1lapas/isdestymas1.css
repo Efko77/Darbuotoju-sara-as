@@ -54,3 +54,18 @@ div.komanda {
 .dropdown:hover.meniu {
     background-color: coral;
 }
+.progresas1 {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+.progresas2{
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+.progresas3 {
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
