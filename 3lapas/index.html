@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="manoAplikacija">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Vartotojai.css">
+</head>
+<body ng-controller="vartotojaiController">
+
+
+    <img border="0"
+        src="/img/{{user.id}}.jpg"
+         width="300" height="300">
+    <div class="tekstas">ID: {{user.id}}</div>
+    <div class="tekstas">Vardas: {{user.name}}</div>
+    <div class="tekstas">Pavarde: {{user.surname}}</div>
+    <div class="tekstas">Darbo valandu skaicius: {{user.darbo_valandu_skaicius}}</div>
+    <div class="tekstas">Virsvalandžiai: {{user.Virsvalandziai}}</div>
+
+    <form method="post" action="../Back-end/update-data.php"> <input name="id" type="hidden" value="{{user.id}}"><input name="name" value="{{user.name}}"><input name="surname" value="{{user.surname}}"><input name="darbo_valandu_skaicius" value="{{user.darbo_valandu_skaicius}}"><input name="Virsvalandziai" value="{{user.Virsvalandziai}}"><input type="submit"> <input name="password"></form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="manoAplikacija.js"></script>
+<script src="vartotojaiController.js"></script>
+
+</body>
+</html>
