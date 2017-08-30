@@ -46,6 +46,7 @@ div.transbox h1{
     font-weight: bold;
     text-align: center;
     color: #000000;
+    font-size: 30px;
 }
 .nuotrauka {
     border: solid;
@@ -126,15 +127,19 @@ color: black;
     background-color: white;
     border: 2px solid;
     width: 400px;
-    height: 10px;
+    height: 20px;
 }
 .progresas2{
     color: black;
     background-color: white;
     border: 2px solid;
+    width: 400px;
+    height: 20px;
 }
 .progresas3 {
     color: black;
     background-color: white;
     border: 2px solid;
+    width: 400px;
+    height: 20px;
 }
