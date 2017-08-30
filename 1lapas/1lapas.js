@@ -1,8 +1,6 @@
-/*&(kdajfgkjah).click(function(){
-    adfjglakj
-});*/
-$(".meniu").click(function () {
-    $(".dropdown-content").show();
 
-
+$(".meniu").ready(function () {
+    $(".meniu").click(function () {
+        $(".dropdown-content").toggle(500);
+    });
 });
